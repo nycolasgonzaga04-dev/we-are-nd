@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#FFD700" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#FFD700" opacity="0.7"/>
+    </pattern>
+  </defs>
+  
+  <rect width="200" height="200" fill="#000000"/>
+  <circle cx="100" cy="90" r="60" fill="url(#glow)"/>
+  
+  <!-- Bulb Outline -->
+  <path d="M100 30 C60 30 40 55 40 85 C40 105 52 120 65 135 L65 155 C65 160 68 165 75 165 L125 165 C132 165 135 160 135 155 L135 135 C148 120 160 105 160 85 C160 55 140 30 100 30 Z" fill="none" stroke="#FFD700" stroke-width="8"/>
+  
+  <!-- Bulb inner grid/globe -->
+  <circle cx="100" cy="85" r="45" fill="url(#dots)" opacity="0.8"/>
+  <path d="M100 40 C80 40 70 60 70 85 C70 110 80 130 100 130 C120 130 130 110 130 85 C130 60 120 40 100 40 Z" fill="none" stroke="#FFD700" stroke-width="2" opacity="0.8"/>
+  <path d="M55 85 L145 85" stroke="#FFD700" stroke-width="2" opacity="0.8"/>
+  <path d="M100 40 L100 130" stroke="#FFD700" stroke-width="2" opacity="0.8"/>
+
+  <!-- Base -->
+  <path d="M75 175 L125 175" stroke="#FFD700" stroke-width="8" stroke-linecap="round"/>
+  <path d="M85 185 L115 185" stroke="#FFD700" stroke-width="8" stroke-linecap="round"/>
+</svg>

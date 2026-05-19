@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WE ARE | Agência Digital Criativa</title>
+    <meta name="description" content="WE ARE - Transformamos ideias em resultados digitais.">
+    <link rel="icon" href="logo.jpg.jpeg" type="image/jpeg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-mode">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="logo.jpg.jpeg" alt="WE ARE Logo" class="logo-img editable-img" id="nav-logo">
+                <span class="logo-text editable-text" data-key="site_name">WE ARE</span>
+            </a>
+            <div class="nav-links">
+                <a href="#about">Sobre</a>
+                <a href="#services">Serviços</a>
+                <a href="#portfolio">Portfólio</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-btn" aria-label="Alternar Tema"><i class='bx bx-moon'></i></button>
+                <div class="menu-toggle"><i class='bx bx-menu'></i></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero-section">
+        <div class="hero-bg">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+        </div>
+        <div class="hero-content reveal">
+            <img src="logo.jpg.jpeg" alt="WE ARE Logo" class="hero-logo editable-img" id="hero-logo-img">
+            <h1 class="hero-title editable-text" data-key="hero_title">Transformamos ideias em resultados digitais</h1>
+            <p class="hero-desc editable-text" data-key="hero_desc">Edição profissional, design criativo e soluções digitais para sua empresa crescer.</p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn btn-primary">Solicitar Serviço</a>
+                <a href="#portfolio" class="btn btn-secondary">Ver Portfólio</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <h3 class="section-tag">Sobre Nós</h3>
+                    <h2 class="section-title">Quem somos</h2>
+                    <p class="editable-text about-desc" data-key="about_text">A We Are é uma empresa especializada em soluções digitais criativas, oferecendo serviços profissionais de edição, design e desenvolvimento para empresas, criadores de conteúdo e marcas.</p>
+                </div>
+                <div class="about-visual reveal right">
+                    <div class="glass-card">
+                        <img src="logo.jpg.jpeg" alt="About Logo" class="about-img editable-img" id="about-logo-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header reveal text-center">
+                <h3 class="section-tag">Nossos Serviços</h3>
+                <h2 class="section-title">Escolha a solução ideal</h2>
+            </div>
+            
+            <div class="services-grid" id="services-container">
+                <!-- Services will be populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="section-header reveal text-center">
+                <h3 class="section-tag">Portfólio</h3>
+                <h2 class="section-title">Nossos Trabalhos</h2>
+            </div>
+            <div class="portfolio-grid" id="portfolio-container">
+                <!-- Portfolio items -->
+                <div class="portfolio-item reveal">
+                    <div class="portfolio-img bg-placeholder">
+                        <i class='bx bx-image-alt'></i>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h4 class="editable-text" data-key="port_1_title">Projeto Alpha</h4>
+                        <p class="editable-text" data-key="port_1_desc">Design e Edição</p>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal delay-1">
+                    <div class="portfolio-img bg-placeholder">
+                        <i class='bx bx-video'></i>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h4 class="editable-text" data-key="port_2_title">Campanha Beta</h4>
+                        <p class="editable-text" data-key="port_2_desc">Vídeo Promocional</p>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal delay-2">
+                    <div class="portfolio-img bg-placeholder">
+                        <i class='bx bx-laptop'></i>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h4 class="editable-text" data-key="port_3_title">Website Gamma</h4>
+                        <p class="editable-text" data-key="port_3_desc">Desenvolvimento Web</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-header reveal text-center">
+                <h3 class="section-tag">Depoimentos</h3>
+                <h2 class="section-title">O que nossos clientes dizem</h2>
+            </div>
+            <div class="testimonial-slider reveal">
+                <div class="testimonial-card glass-card">
+                    <div class="stars">
+                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                    </div>
+                    <p class="editable-text" data-key="test_1_text">"Trabalho incrível! O design do nosso site ficou maravilhoso e a equipe é super profissional. Ajudou muito nas nossas vendas."</p>
+                    <h4 class="editable-text" data-key="test_1_author">- João Silva, CEO</h4>
+                </div>
+                <div class="testimonial-card glass-card">
+                    <div class="stars">
+                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                    </div>
+                    <p class="editable-text" data-key="test_2_text">"As edições de vídeo para o Instagram transformaram nosso engajamento. Recomendo a We Are de olhos fechados!"</p>
+                    <h4 class="editable-text" data-key="test_2_author">- Maria Fernanda, Influenciadora</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="section-header reveal text-center">
+                <h3 class="section-tag">Dúvidas</h3>
+                <h2 class="section-title">Perguntas Frequentes</h2>
+            </div>
+            <div class="faq-container reveal">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Como funciona o processo de contratação?</h4>
+                        <i class='bx bx-chevron-down'></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Basta escolher o serviço, realizar o pagamento via PIX e enviar o comprovante para nosso WhatsApp. Em seguida, iniciaremos o briefing do seu projeto.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Qual o prazo de entrega?</h4>
+                        <i class='bx bx-chevron-down'></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>O prazo varia conforme o serviço. Edições simples levam de 24h a 48h. Criação de sites pode levar de 7 a 15 dias úteis.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Tenho direito a alterações?</h4>
+                        <i class='bx bx-chevron-down'></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! Todos os nossos pacotes incluem até 3 revisões gratuitas para garantir que o resultado final fique exatamente como você deseja.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <!-- Secret Admin Trigger is this logo -->
+                    <img src="logo.jpg.jpeg" alt="WE ARE" class="footer-logo editable-img" id="footer-logo-btn">
+                    <p class="editable-text" data-key="footer_desc">Transformando ideias em resultados digitais.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <a href="#hero">Início</a>
+                    <a href="#about">Sobre</a>
+                    <a href="#services">Serviços</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class='bx bxl-instagram'></i></a>
+                        <a href="#"><i class='bx bxl-behance'></i></a>
+                        <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> WE ARE. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Elements -->
+    <a href="#" id="wa-btn" class="floating-wa" aria-label="WhatsApp">
+        <i class='bx bxl-whatsapp'></i>
+    </a>
+    <button id="back-to-top" class="back-to-top" aria-label="Voltar ao topo">
+        <i class='bx bx-up-arrow-alt'></i>
+    </button>
+
+    <!-- Modals -->
+
+    <!-- Checkout PIX Modal -->
+    <div id="checkout-modal" class="modal">
+        <div class="modal-content glass-card checkout-card">
+            <span class="close-modal">&times;</span>
+            <div class="checkout-header">
+                <h3>Pagamento PIX</h3>
+                <p>Escaneie o QR Code para pagar</p>
+            </div>
+            <div class="checkout-details">
+                <div class="srv-summary">
+                    <span id="checkout-srv-name">Serviço</span>
+                    <strong id="checkout-srv-price">R$0,00</strong>
+                </div>
+                <div class="qr-code-container">
+                    <img id="pix-qr" src="" alt="QR Code PIX">
+                </div>
+                <div class="checkout-input-group">
+                    <label for="checkout-desc">Descreva os detalhes do seu pedido:</label>
+                    <textarea id="checkout-desc" rows="3" class="checkout-textarea" placeholder="Ex: Gostaria de um site com 5 páginas, cores azul e branco..."></textarea>
+                </div>
+                <div class="checkout-alert">
+                    <i class='bx bx-info-circle'></i>
+                    <p class="editable-text" data-key="pix_msg">Após realizar o pagamento envie o comprovante para nosso atendimento.</p>
+                </div>
+                <button id="send-proof-btn" class="btn btn-primary w-100 mt-3">
+                    <i class='bx bxl-whatsapp'></i> Enviar Comprovante
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Login Modal -->
+    <div id="admin-login-modal" class="modal">
+        <div class="modal-content glass-card admin-login">
+            <span class="close-modal">&times;</span>
+            <h2>Área do Administrador</h2>
+            <p>Acesso restrito</p>
+            <input type="password" id="admin-pass" placeholder="Senha" class="admin-input">
+            <button id="admin-login-btn" class="btn btn-primary w-100 mt-2">Entrar</button>
+            <p id="admin-error" class="error-text">Senha incorreta</p>
+        </div>
+    </div>
+
+    <!-- Admin Floating Dashboard -->
+    <div id="admin-panel" class="admin-panel glass-card" style="display: none;">
+        <div class="admin-header">
+            <h3><i class='bx bx-edit'></i> Modo Administrador</h3>
+        </div>
+        <div class="admin-body">
+            <p class="admin-tip">Você está no modo de edição. Clique nos textos ou ícones de edição para alterar.</p>
+            <div class="admin-controls">
+                <button id="admin-save-btn" class="btn btn-primary w-100 mb-2">Salvar Alterações</button>
+                <button id="admin-reset-btn" class="btn btn-outline w-100 mb-2">Restaurar Padrão</button>
+                <button id="admin-logout-btn" class="btn btn-danger w-100">Sair do modo administrador</button>
+            </div>
+            
+            <div class="admin-settings mt-3">
+                <h4>Configurações Gerais</h4>
+                <div class="form-group">
+                    <label>Número WhatsApp (Ex: 5582991424574)</label>
+                    <input type="text" id="admin-wa-input" class="admin-input">
+                </div>
+                <div class="form-group">
+                    <label>Chave PIX</label>
+                    <input type="text" id="admin-pix-input" class="admin-input">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Edit Modal -->
+    <div id="img-edit-modal" class="modal">
+        <div class="modal-content glass-card">
+            <span class="close-modal">&times;</span>
+            <h2>Alterar Imagem</h2>
+            <div class="form-group">
+                <label>URL da Imagem</label>
+                <input type="text" id="img-url-input" class="admin-input" placeholder="https://...">
+            </div>
+            <button id="save-img-btn" class="btn btn-primary w-100 mt-2">Salvar Imagem</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+</body>
+</html>
